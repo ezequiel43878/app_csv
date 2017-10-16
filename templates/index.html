@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	<table class="table table-bordered table-striped">
+		
+	{% for fila in list %}
+		<tr>
+			{% for columna in fila %}
+				<td>{{columna}} </td>
+			{% endfor %}  
+		</tr>
+	{% endfor %}
+		
+	</table>
+
+{% endblock %}
